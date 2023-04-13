@@ -16,7 +16,10 @@ const circles = [
   { diameter: 400, text: "Uranus", position: 10 },
   { diameter: 450, text: "Neptune", position: 25 },
 ];
-import CircleText from "@/components/circle/Circle";
+
+import Experience from "@/components/experience";
+import Education from "@/components/Education";
+
 const MovingCircle = () => {
   return (
     <motion.div
@@ -120,9 +123,13 @@ const About = () => {
                 </h2>
               </div>
             </div>
+            {/* <SolarSystem /> */}
           </div>
           <Skills />
           {/* <MovingCircle /> */}
+
+          <Experience />
+          <Education />
         </Layout>
       </main>
     </div>

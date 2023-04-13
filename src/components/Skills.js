@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import SolarSystem from "./circle/SunShine";
 
 const Skill = ({ name, x, y }) => {
   return (
@@ -40,6 +41,7 @@ const Skills = () => {
         <Skill name="ChakraUi" x="-30vw" y="10vw" />
         <Skill name="React Native" x="-30vw" y="-10vw" />
       </div>
+      <div className="container">{/* <SolarSystem /> */}</div>
     </div>
   );
 };
