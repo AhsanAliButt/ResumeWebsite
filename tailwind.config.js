@@ -5,6 +5,23 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   darkMode: "class",
   theme: {
+    screens: {
+      xs: { max: "480px" },
+      // => @media (min-width: 480px) { ... }
+      sm: { max: "640px" },
+      // => @media (min-width: 640px) { ... }
+      md: { max: "770" },
+      // => @media (min-width: 770px) { ... }
+      lg: { max: "1024px" },
+      // => @media (min-width: 1024px) { ... }
+      xl: { max: "1280px" },
+      // => @media (min-width: 1280px) { ... }
+      xxl: { max: "1540px" },
+      // => @media (min-width: 1540px) { ... }
+
+      xl: { max: "1280px" },
+      // => @media (min-width: 1280px) { ... }
+    },
     extend: {
       fontFamily: {
         mont: ["var(--font-mont)", ...fontFamily.sans],

@@ -22,19 +22,23 @@ export default function Home() {
           "flex items-center text-dark w-full min-h-screen dark:text-light"
         }
       >
-        <Layout className="pt-0">
-          <div className="flex items-center justify-between w-full">
-            <div className="w-1/2">
+        <Layout className="pt-0 md:pt-16 sm:pt-8">
+          <div className="flex items-center justify-between w-full lg:flex-col">
+            <div className="w-1/2 md:w-full">
               <Image
                 src={profilePic}
                 alt="AhsanNegative"
-                className="w-full h-auto"
+                className="w-full h-auto lg-hidden md:inline-block md:w-full"
+                priority
+                sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
               />
             </div>
-            <div className="w-1/2 flex flex-col items-center self-center">
+            <div className="w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center">
               <AnimatedText
                 text="Turning Vision Into Reality With Code And Design."
-                className="!text-6xl !text-left"
+                className="!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
               />
               <p className="my-4 text-base font-medium">
                 As a skilled full-stack developer, I am dedicated to turning
@@ -42,7 +46,7 @@ export default function Home() {
                 projects and articles, showcasing my expertise in React.js and
                 web development.
               </p>
-              <div className="flex items-center self-start mt-2">
+              <div className="lg:self-center flex items-center self-start mt-2">
                 <Link
                   href="/dummy.pdf"
                   target={"_blank"}
@@ -67,7 +71,9 @@ export default function Home() {
         <div className={"absolute right-8 bottom-8 inline-block w-24"}>
           <HireMe />
         </div>
-        <div className={"absolute right-8 bottom-8 inline-block w-24 "}>
+        <div
+          className={"absolute right-8 bottom-8 inline-block w-24 md:hidden "}
+        >
           {/* <Image
             src={LightBulb}
             alt={"AhsanNegative"}
