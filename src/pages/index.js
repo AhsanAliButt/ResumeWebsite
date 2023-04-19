@@ -50,7 +50,7 @@ export default function Home() {
                 <Link
                   href="/dummy.pdf"
                   target={"_blank"}
-                  className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark dark:text-dark dark:bg-light hover:dark:text-light hover:dark:bg-dark hover:dark:border-light md:p-2"
+                  className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark dark:text-dark dark:bg-light hover:dark:text-light hover:dark:bg-dark hover:dark:border-light md:p-2 md:px-4 md:text-base"
                   download={true}
                 >
                   {" "}
@@ -59,7 +59,7 @@ export default function Home() {
                 <Link
                   href="mailto:ahsanbutt515@icloud.com"
                   target={"_blank"}
-                  className="ml-4 text-lg font-medium capitalize text-dark underline dark:text-light"
+                  className="ml-4 text-lg font-medium capitalize text-dark underline dark:text-light md:text-base"
                 >
                   {" "}
                   Contact
