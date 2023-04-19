@@ -5,23 +5,6 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   darkMode: "class",
   theme: {
-    screens: {
-      xs: { max: "480px" },
-      // => @media (min-width: 480px) { ... }
-      sm: { max: "640px" },
-      // => @media (min-width: 640px) { ... }
-      md: { max: "770" },
-      // => @media (min-width: 770px) { ... }
-      lg: { max: "1024px" },
-      // => @media (min-width: 1024px) { ... }
-      xl: { max: "1280px" },
-      // => @media (min-width: 1280px) { ... }
-      xxl: { max: "1540px" },
-      // => @media (min-width: 1540px) { ... }
-
-      xl: { max: "1280px" },
-      // => @media (min-width: 1280px) { ... }
-    },
     extend: {
       fontFamily: {
         mont: ["var(--font-mont)", ...fontFamily.sans],
@@ -44,6 +27,25 @@ module.exports = {
         circularDark:
           "repeating-radial-gradient(rgba(255,255,255,0.5) 2px,#1b1b1b 8px, #1b1b1b 100px);",
       },
+    },
+    screens: {
+      "2xl": { max: "1535px" },
+      // => @media (max-width: 1535px) { ... }
+
+      xl: { max: "1279px" },
+      // => @media (max-width: 1279px) { ... }
+
+      lg: { max: "1023px" },
+      // => @media (max-width: 1023px) { ... }
+
+      md: { max: "767px" },
+      // => @media (max-width: 767px) { ... }
+
+      sm: { max: "639px" },
+      // => @media (max-width: 639px) { ... }
+
+      xs: { max: "479px" },
+      // => @media (max-width: 479px) { ... }
     },
   },
   plugins: [],
