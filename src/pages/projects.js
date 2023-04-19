@@ -4,7 +4,7 @@ import Layout from "@/components/layout/Layout";
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
-import Project1 from "../../public/images/AhsanNegative.png";
+import Project1 from "../../public/images/projects/adminDashboard.png";
 import { GitHubIcon } from "@/components/icons/Icons";
 import { motion } from "framer-motion";
 const FramerImage = motion(Image);
