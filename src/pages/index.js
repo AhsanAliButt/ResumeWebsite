@@ -19,7 +19,7 @@ export default function Home() {
       </Head>
       <main
         className={
-          "flex items-center text-dark w-full min-h-screen dark:text-light"
+          "flex items-center text-dark w-full min-h-screen sm:min-h-0 dark:text-light"
         }
       >
         <Layout className="pt-0 md:pt-16 sm:pt-8">

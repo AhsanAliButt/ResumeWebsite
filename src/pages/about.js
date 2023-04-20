@@ -62,21 +62,24 @@ const About = () => {
       </Head>
       <main className="flex w-full flex-col items-center justify-center dark:text-light">
         <Layout className="pt-16">
-          <AnimatedText text="Passion fuels Purpose!" className="mb-16" />
-          <div className="grid w-full grid-cols-8 gap-16">
-            <div className="col-span-3 flex flex-col items-start justify-start ">
+          <AnimatedText
+            text="Passion fuels Purpose!"
+            className="mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"
+          />
+          <div className="grid w-full grid-cols-8 gap-16 sm:gap-8">
+            <div className="col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8 ">
               <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">
                 Biography
               </h2>
 
-              <p>
+              <p className="sm:mb-2">
                 Hi, I&apos;m Ahsan Ali, a web developer and UI/UX designer with
                 a passion for creating beautiful, functional, and user-centered
                 digital experiences. With 1.5 year of experience in the field. I
                 am always looking for new and innovative ways to bring my
                 clients visions to life.
               </p>
-              <p>
+              <p className="sm:mb-2">
                 - I believe that design is about more than just making things
                 look pretty – it&apos;s about solving problems and creating
                 intuitive, enjoyable experiences for users.
@@ -89,7 +92,7 @@ const About = () => {
                 your next project.
               </p>
             </div>
-            <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 flex justify-center dark:bg-dark dark:border-light ">
+            <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 flex justify-center dark:bg-dark dark:border-light xl:col-span-4 md:order-1 md:col-span-8 ">
               <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-2xl bg-dark dark:bg-light " />
               <Image
                 src={ProfilePic}
@@ -101,7 +104,7 @@ const About = () => {
               33vw"
               />
             </div>
-            <div className="col-span-2 flex flex-col items-end justify-between">
+            <div className="col-span-2 flex flex-col items-end justify-between xl:col-span-8 xl:flex-row xl:items-center md:order-3">
               {/* <div>
                     <span>
 50+
@@ -112,7 +115,7 @@ const About = () => {
                 <span className="inline-block text-7xl font-bold">
                   <AnimatedNumbers value={10} />+
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75">
+                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 sm:text-sm sm:font-bold">
                   {" "}
                   Projects Completed
                 </h2>
@@ -121,7 +124,7 @@ const About = () => {
                 <span className="inline-block text-7xl font-bold">
                   <AnimatedNumbers value={2} />+
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75">
+                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 sm:text-sm sm:font-bold">
                   Years of Exeperience
                 </h2>
               </div>
