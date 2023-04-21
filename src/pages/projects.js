@@ -19,9 +19,9 @@ const Projects = () => {
         <Layout className="pt-16">
           <AnimatedText
             text="My 2 years Journey in WebDevelopment"
-            className="mb-16 sm:text-xl"
+            className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
           />{" "}
-          <div className="grid grid-cols-12 gap-24 gap-y-32">
+          <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0 ">
             <div className="col-span-12">
               <FeaturedProject
                 title="Admin Dashboard"
@@ -31,7 +31,7 @@ const Projects = () => {
                 github="https://github.com/AhsanAliButt/MernAdminDashBoard"
               />
             </div>
-            <div className="col-span-6">
+            <div className="col-span-6 sm:col-span-12">
               {" "}
               <Project
                 title="Admin Dashboard"
@@ -40,7 +40,7 @@ const Projects = () => {
                 github="https://github.com/AhsanAliButt/MernAdminDashBoard"
               />
             </div>
-            <div className="col-span-6">
+            <div className="col-span-6 sm:col-span-12">
               <Project
                 title="Admin Dashboard"
                 summary="Created This Mern Stack Project with React Js,Redux Toolkit , Redux Querry Toolkit, Material Ui , Nivo Graphs in Front End and Node Js, Express Js and Mongodb as Backend specially focused on backend sorting "
@@ -58,7 +58,7 @@ const Projects = () => {
                 github="https://github.com/AhsanAliButt/MernAdminDashBoard"
               />
             </div>
-            <div className="col-span-6">
+            <div className="col-span-6 sm:col-span-12">
               {" "}
               <Project
                 title="Admin Dashboard"
@@ -67,7 +67,7 @@ const Projects = () => {
                 github="https://github.com/AhsanAliButt/MernAdminDashBoard"
               />
             </div>
-            <div className="col-span-6">
+            <div className="col-span-6 sm:col-span-12">
               <Project
                 title="Admin Dashboard"
                 summary="Created This Mern Stack Project with React Js,Redux Toolkit , Redux Querry Toolkit, Material Ui , Nivo Graphs in Front End and Node Js, Express Js and Mongodb as Backend specially focused on backend sorting "
@@ -86,8 +86,8 @@ export default Projects;
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return (
-    <article className="w-full flex items-center justify-between rounded-3xl border border-solid relative border-dark bg-light shadow-2xl p-12 dark:bg-dark dark:border-light dark:text-light lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4">
-      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark dark:bg-light rounded-be-3xl  " />
+    <article className="w-full flex items-center justify-between rounded-3xl border border-solid relative border-dark bg-light shadow-2xl p-12 dark:bg-dark dark:border-light dark:text-light lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-2">
+      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark dark:bg-light rounded-be-3xl xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]  " />{" "}
       <Link
         href={link}
         target="_blank"
@@ -135,12 +135,12 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
 
 const Project = ({ type, title, summary, img, link, github }) => {
   return (
-    <article className="w-full flex flex-col items-center relative justify-between rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 dark:bg-dark dark:border-light dark:text-light">
-      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[102%] rounded-[1.5rem] bg-dark dark:bg-light " />
+    <article className="w-full flex flex-col items-center relative justify-between rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 dark:bg-dark dark:border-light dark:text-light xs:p-4">
+      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[102%] rounded-[1.5rem] bg-dark dark:bg-light md:-right-2 md:h-[101%] xs:h-[102%] xs:rounded-[1.5rem] " />
       <Link
         href={link}
         target="_blank"
-        className="cursor-pointer inline-block overflow-hidden rounded-lg"
+        className="cursor-pointer inline-block overflow-hidden rounded-lg lg:w-full"
       >
         <FramerImage
           src={Project1}
@@ -163,19 +163,19 @@ const Project = ({ type, title, summary, img, link, github }) => {
           target="_blank"
           className="hover:underline underline-offset-2"
         >
-          <h2 className="my-2 w-full text-left text-4xl font-bold dark:text-primaryDark">
+          <h2 className="my-2 w-full text-left text-4xl font-bold dark:text-primaryDark lg:text-2xl">
             {title}
           </h2>
         </Link>
         <p className="my-2 font-medium text-dark dark:text-light">{summary}</p>
         <div className="w-full mt-2 flex items-center justify-between">
-          <Link href={github} target="_blank" className="w-8">
+          <Link href={github} target="_blank" className="w-8 md:w-6">
             <GitHubIcon />
           </Link>
           <Link
             href={link}
             target="_blank"
-            className="underline rounded-lg text-dark p-2 px-6 text-lg font-semibold dark:text-primaryDark"
+            className="underline rounded-lg text-dark p-2 px-6 text-lg font-semibold dark:text-primaryDark md:text-base"
           >
             {" "}
             Visit

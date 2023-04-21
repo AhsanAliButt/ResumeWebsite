@@ -173,7 +173,6 @@ const Navbar = () => {
           <nav className="flex items-center justify-center flex-wrap mt-2">
             {LinksData.map((item) => {
               const Component = item.component;
-              console.log("CLASSPATH: " + item.className);
               return (
                 <>
                   {item.component === "GitHubIcon" ? (
