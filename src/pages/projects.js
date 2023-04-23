@@ -7,6 +7,7 @@ import Image from "next/image";
 import Project1 from "../../public/images/adminDashBoard.png";
 import { GitHubIcon } from "@/components/icons/Icons";
 import { motion } from "framer-motion";
+import TransitionEffect from "@/components/TransitionEffect";
 const FramerImage = motion(Image);
 const Projects = () => {
   return (
@@ -15,6 +16,7 @@ const Projects = () => {
         <title> Ahsan Ali | Projects Page </title>
         <meta name="description" content="any description" />
       </Head>
+      <TransitionEffect />
       <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">
         <Layout className="pt-16">
           <AnimatedText

@@ -19,6 +19,7 @@ const circles = [
 
 import Experience from "@/components/experience";
 import Education from "@/components/Education";
+import TransitionEffect from "@/components/TransitionEffect";
 
 const MovingCircle = () => {
   return (
@@ -60,6 +61,7 @@ const About = () => {
         <title>AhsanNegative || About Page</title>
         <meta name="description" content="any description" />
       </Head>
+      <TransitionEffect />
       <main className="flex w-full flex-col items-center justify-center dark:text-light">
         <Layout className="pt-16">
           <AnimatedText

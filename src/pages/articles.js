@@ -7,6 +7,7 @@ import React, { useRef } from "react";
 import article1 from "../../public/images/articles/pagination component in reactjs.jpg";
 import article2 from "../../public/images/articles/create loading screen in react js.jpg";
 import { motion, useMotionValue } from "framer-motion";
+import TransitionEffect from "@/components/TransitionEffect";
 const FramerImage = motion(Image);
 const FeaturedArticles = ({ img, title, time, summary, link = "/" }) => {
   return (
@@ -114,6 +115,7 @@ const Articles = () => {
         <title> Ahsan Ali | Projects Page </title>
         <meta name="description" content="any description" />
       </Head>
+      <TransitionEffect />
       <main className="w-full mb-16 flex flex-col items-center justify-center overflow-hidden dark:text-light">
         <Layout className="pt-16">
           <AnimatedText
