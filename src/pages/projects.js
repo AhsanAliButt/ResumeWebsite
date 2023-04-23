@@ -117,6 +117,26 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
           </h2>
         </Link>
         <p className="my-2 font-medium text-dark dark:text-light">{summary}</p>
+        <h4 className="my-2 w-full text-left text-xl font-bold dark:text-primaryDark sm:text-sm">
+          Technologies use in this project
+        </h4>
+        <div
+          className="flex max-w-1/2"
+          style={{ maxWidth: "100%", overflowX: "scroll" }}
+        >
+          <Technologies />
+          <Technologies />
+          <Technologies />
+          <Technologies />
+          <Technologies />
+          <Technologies />
+          <Technologies />
+          <Technologies />
+          <Technologies />
+          <Technologies />
+          <Technologies />
+          <Technologies />
+        </div>
         <div className="mt-2 flex items-center">
           <Link href={github} target="_blank" className="w-10">
             <GitHubIcon />
@@ -185,5 +205,15 @@ const Project = ({ type, title, summary, img, link, github }) => {
         </div>
       </div>
     </article>
+  );
+};
+
+const Technologies = ({ skill }) => {
+  return (
+    <div>
+      <div className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold dark:bg-light dark:text-dark sm:px-4 sm:text-base">
+        {skill || "HTML"}
+      </div>
+    </div>
   );
 };
