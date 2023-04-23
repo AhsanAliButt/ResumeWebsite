@@ -16,10 +16,7 @@ export default function Home() {
     <>
       <Head>
         <title> Welcome To My Portfolio</title>
-        <meta
-          name="description"
-          content="Welcome to Ahsan Ali Portfolio Website"
-        />
+        <meta name="description" content="Ahsan Ali Butt " />
       </Head>
       <TransitionEffect />
       <main
