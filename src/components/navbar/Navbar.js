@@ -65,11 +65,15 @@ const LinksData = [
   {
     item: 1,
     component: GitHubIcon,
-    href: "https://twitter.com",
+    href: "https://github.com/AhsanAliButt",
     className: "w-6 mr-3 bg-light rounded-full dark:bg-dark sm:mx-1",
   },
-  { item: 2, component: LinkdinIcon, href: "https://linkedin.com/" },
-  { item: 3, component: TwitterIcon },
+  {
+    item: 2,
+    component: LinkdinIcon,
+    href: "https://www.linkedin.com/in/ahsan-butt-056772263/",
+  },
+  { item: 3, component: TwitterIcon, href: "https://twitter.com/" },
   { item: 4, component: DribbbleIcon },
   { item: 5, component: PinterestIcon },
   // { item: 6, component: SunIcon },
