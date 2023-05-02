@@ -25,7 +25,7 @@ const Projects = () => {
             className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
           />{" "}
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0 ">
-            {ProjectsData.map((project) => {
+            {/* {ProjectsData.map((project) => {
               return (
                 <>
                   {project.type === "Featured" ? (
@@ -44,8 +44,8 @@ const Projects = () => {
                   )}
                 </>
               );
-            })}
-            {/* <div className="col-span-12">
+            })} */}
+            <div className="col-span-12">
               <FeaturedProject
                 title="Admin Dashboard"
                 summary="Created This Mern Stack Project with React Js,Redux Toolkit , Redux Querry Toolkit, Material Ui , Nivo Graphs in Front End and Node Js, Express Js and Mongodb as Backend specially focused on backend sorting "
@@ -53,7 +53,7 @@ const Projects = () => {
                 type="Featured Project"
                 github="https://github.com/AhsanAliButt/MernAdminDashBoard"
               />
-            </div> */}
+            </div>
             <div className="col-span-6 sm:col-span-12">
               {" "}
               <Project
@@ -76,7 +76,7 @@ const Projects = () => {
               <FeaturedProject
                 title="Admin Dashboard"
                 summary="Created This Mern Stack Project with React Js,Redux Toolkit , Redux Querry Toolkit, Material Ui , Nivo Graphs in Front End and Node Js, Express Js and Mongodb as Backend specially focused on backend sorting "
-                link="/"
+                link="https://ahsan-tracker.surge.sh/"
                 type="Featured Project"
                 github="https://github.com/AhsanAliButt/MernAdminDashBoard"
               />
@@ -117,12 +117,12 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
         className="w-1/2 inline-block cursor-pointer overflow-hidden rounded-lg lg:w-full"
       >
         <FramerImage
-          src={img}
+          src={img || Project1}
           alt="AhsanNegative"
           className="w-full h-auto"
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.2 }}
-          fill
+          // fill
         />
       </Link>
       <div className="w-1/2 flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6">
