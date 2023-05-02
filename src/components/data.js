@@ -6,9 +6,9 @@ export const ProjectsData = [
     imageUrl:
       "https://ik.imagekit.io/amazonClone/ResumeWebsite/AdminDashBoard_nfr3LyKsY.png?updatedAt=1682283864764",
     deployLink: "https://ahsan-ali-resume.vercel.app/",
-    githubLink: "https://github.com/AhsanAliButt/ResumeWebsite",
+    githubLink: "https://github.com/AhsanAliButt/MernAdminDashBoard",
     description:
-      "Admin can check client's details how much and when and what they buy their daily weekly monthly and yearly purchasing. can locate sale also region wise and many more ",
+      "Admin can check client's details how much and when and what they buy their daily weekly monthly and yearly purchasing. can locate sale also region wise and can sort filter watch total sales in desired month on year or day and much more ",
     technologies: [
       "HTML",
       "CSS",

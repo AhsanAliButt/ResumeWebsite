@@ -8,6 +8,7 @@ import Project1 from "../../public/images/adminDashBoard.png";
 import { GitHubIcon } from "@/components/icons/Icons";
 import { motion } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
+import { ProjectsData } from "@/components/data";
 const FramerImage = motion(Image);
 const Projects = () => {
   return (
@@ -24,7 +25,27 @@ const Projects = () => {
             className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
           />{" "}
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0 ">
-            <div className="col-span-12">
+            {ProjectsData.map((project) => {
+              return (
+                <>
+                  {project.type === "Featured" ? (
+                    <div className="col-span-12">
+                      <FeaturedProject
+                        title={project.name}
+                        summary={project.description}
+                        link={project.deployLink}
+                        img={project.imageUrl}
+                        type={project.type}
+                        github={project.githubLink}
+                      />
+                    </div>
+                  ) : (
+                    <></>
+                  )}
+                </>
+              );
+            })}
+            {/* <div className="col-span-12">
               <FeaturedProject
                 title="Admin Dashboard"
                 summary="Created This Mern Stack Project with React Js,Redux Toolkit , Redux Querry Toolkit, Material Ui , Nivo Graphs in Front End and Node Js, Express Js and Mongodb as Backend specially focused on backend sorting "
@@ -32,7 +53,7 @@ const Projects = () => {
                 type="Featured Project"
                 github="https://github.com/AhsanAliButt/MernAdminDashBoard"
               />
-            </div>
+            </div> */}
             <div className="col-span-6 sm:col-span-12">
               {" "}
               <Project
@@ -96,11 +117,12 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
         className="w-1/2 inline-block cursor-pointer overflow-hidden rounded-lg lg:w-full"
       >
         <FramerImage
-          src={Project1}
+          src={img}
           alt="AhsanNegative"
           className="w-full h-auto"
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.2 }}
+          fill
         />
       </Link>
       <div className="w-1/2 flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6">
