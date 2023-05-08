@@ -59,43 +59,39 @@ const Experience = () => {
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           <Details
-            position={"Software Engineer"}
-            company={"Google"}
-            companyLink={"www.google.com"}
-            time={"2022-Present"}
-            address={"Mountain View,CA"}
-            work="Worked on a team responsible for developing new features for Google's 
-search engine, including improving the accuracy and relevance of search results and 
+            position={"Jr. Soft Developer"}
+            company={"Techloset"}
+            companyLink={"www.techloset.com"}
+            time={"01/08/2022-28/02/2023"}
+            address={"Faisalabad,Pakistan"}
+            work="Worked on a team responsible for developing new features for BisResume, including improving the accuracy and relevance of search results and 
 developing new tools for data analysis and visualization."
           />
           <Details
-            position={"Software Engineer"}
-            company={"Google"}
-            companyLink={"www.google.com"}
-            time={"2022-Present"}
-            address={"Mountain View,CA"}
-            work="Worked on a team responsible for developing new features for Google's 
-search engine, including improving the accuracy and relevance of search results and 
+            position={"Jr. Soft Developer"}
+            company={"Techloset"}
+            companyLink={"www.techloset.com"}
+            time={"01/08/2022-28/02/2023"}
+            address={"Faisalabad,Pakistan"}
+            work="Worked on a team responsible for developing new features for BisResume, including improving the accuracy and relevance of search results and 
 developing new tools for data analysis and visualization."
           />
           <Details
-            position={"Software Engineer"}
-            company={"Google"}
-            companyLink={"www.google.com"}
-            time={"2022-Present"}
-            address={"Mountain View,CA"}
-            work="Worked on a team responsible for developing new features for Google's 
-search engine, including improving the accuracy and relevance of search results and 
+            position={"Jr. Soft Developer"}
+            company={"Techloset"}
+            companyLink={"www.techloset.com"}
+            time={"01/08/2022-28/02/2023"}
+            address={"Faisalabad,Pakistan"}
+            work="Worked on a team responsible for developing new features for BisResume, including improving the accuracy and relevance of search results and 
 developing new tools for data analysis and visualization."
           />
           <Details
-            position={"Software Engineer"}
-            company={"Google"}
-            companyLink={"www.google.com"}
-            time={"2022-Present"}
-            address={"Mountain View,CA"}
-            work="Worked on a team responsible for developing new features for Google's 
-search engine, including improving the accuracy and relevance of search results and 
+            position={"Jr. Soft Developer"}
+            company={"Techloset"}
+            companyLink={"www.techloset.com"}
+            time={"01/08/2022-28/02/2023"}
+            address={"Faisalabad,Pakistan"}
+            work="Worked on a team responsible for developing new features for BisResume, including improving the accuracy and relevance of search results and 
 developing new tools for data analysis and visualization."
           />
         </ul>
