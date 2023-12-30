@@ -5,6 +5,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import Project1 from "../../public/images/adminDashBoard.png";
+import Project2 from "../../public/images/amazonProject.png";
 import { GitHubIcon } from "@/components/icons/Icons";
 import { motion } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
@@ -57,15 +58,16 @@ const Projects = () => {
             <div className="col-span-6 sm:col-span-12">
               {" "}
               <Project
-                title="Admin Dashboard"
+                title="Amazon Web clone as Backend special focused on backend sorting "
+                img={Project2}
                 summary="Created This Mern Stack Project with React Js,Redux Toolkit , Redux Querry Toolkit, Material Ui , Nivo Graphs in Front End and Node Js, Express Js and Mongodb as Backend specially focused on backend sorting "
                 link="/"
-                github="https://github.com/AhsanAliButt/MernAdminDashBoard"
+                github="https://github.com/AhsanAliButt/MernStack_AmazonClone"
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title="Admin Dashboard"
+                title="BisResume App development"
                 summary="Created This Mern Stack Project with React Js,Redux Toolkit , Redux Querry Toolkit, Material Ui , Nivo Graphs in Front End and Node Js, Express Js and Mongodb as Backend specially focused on backend sorting "
                 link="/"
                 github="https://github.com/AhsanAliButt/MernAdminDashBoard"
@@ -146,9 +148,9 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
           className="flex max-w-1/2"
           style={{ maxWidth: "100%", overflowX: "scroll" }}
         >
-          <Technologies />
-          <Technologies />
-          <Technologies />
+          <Technologies skill={"HTML"} />
+          <Technologies skill={"NextJs"} />
+          <Technologies skill={"Charts"} />
           <Technologies />
           <Technologies />
           <Technologies />
@@ -187,7 +189,7 @@ const Project = ({ type, title, summary, img, link, github }) => {
         className="cursor-pointer inline-block overflow-hidden rounded-lg lg:w-full"
       >
         <FramerImage
-          src={Project1}
+          src={img || Project1}
           alt="AhsanNegative"
           className="w-full h-auto"
           whileHover={{ scale: 1.05 }}

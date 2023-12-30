@@ -58,23 +58,25 @@ const Education = () => {
 Intelligence."
           />
           <Details
+            type={"B.COM"}
+            time="2009-2011"
+            place="Punjab University Lahore"
+            info="Completed my bachelors from Punjab university lahore as a private student currently enrolled in shibble college."
+          />
+          <Details
             type={"Advance Webdevelopment and App Development"}
             time="2020-2022"
             place="SMIT"
             info="Relevant courses included Mern Stack technology and mobile applications development using the reactive programming framework"
           />
           <Details
-            type={"I.COM"}
+            type={
+              "WEB 3.0 Advance Web Development BlockChain and Artificial intelligence(Continue ...)"
+            }
             time="2005-2007"
-            place="Shibble College of Computer Science and Commerce"
+            place="PIAIC(Currently in roll)"
             info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
 Intelligence."
-          />
-          <Details
-            type={"Advance Webdevelopment and App Development"}
-            time="2020-2022"
-            place="SMIT"
-            info="Relevant courses included Mern Stack technology and mobile applications development using the reactive programming framework"
           />
         </ul>
       </div>
