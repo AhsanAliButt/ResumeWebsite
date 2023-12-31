@@ -6,6 +6,8 @@ import Link from "next/link";
 import Image from "next/image";
 import Project1 from "../../public/images/adminDashBoard.png";
 import Project2 from "../../public/images/amazonProject.png";
+import Project3 from "../../public/images/BisResume.png";
+import Project4 from "../../public/images/expenseTracker.png";
 import { GitHubIcon } from "@/components/icons/Icons";
 import { motion } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
@@ -68,8 +70,9 @@ const Projects = () => {
             <div className="col-span-6 sm:col-span-12">
               <Project
                 title="BisResume App development"
+                img={Project3}
                 summary="Created This Mern Stack Project with React Js,Redux Toolkit , Redux Querry Toolkit, Material Ui , Nivo Graphs in Front End and Node Js, Express Js and Mongodb as Backend specially focused on backend sorting "
-                link="/"
+                link={"https://bisresume.com/"}
                 github="https://github.com/AhsanAliButt/MernAdminDashBoard"
               />
             </div>
@@ -86,10 +89,11 @@ const Projects = () => {
             <div className="col-span-6 sm:col-span-12">
               {" "}
               <Project
-                title="Admin Dashboard"
+                title="Expense Tracker"
+                img={Project4}
                 summary="Created This Mern Stack Project with React Js,Redux Toolkit , Redux Querry Toolkit, Material Ui , Nivo Graphs in Front End and Node Js, Express Js and Mongodb as Backend specially focused on backend sorting "
                 link="/"
-                github="https://github.com/AhsanAliButt/MernAdminDashBoard"
+                github="https://github.com/AhsanAliButt/react_expensetracker"
               />
             </div>
             <div className="col-span-6 sm:col-span-12">

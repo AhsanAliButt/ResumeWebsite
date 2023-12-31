@@ -71,7 +71,7 @@ Intelligence."
           />
           <Details
             type={
-              "WEB 3.0 Advance Web Development BlockChain and Artificial intelligence(Continue ...)"
+              "GEN AI,WEB 3 AND METAVERSE BlockChain and Artificial intelligence(Continue ...)"
             }
             time="2005-2007"
             place="PIAIC(Currently in roll)"
