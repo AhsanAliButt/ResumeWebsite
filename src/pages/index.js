@@ -1,3 +1,4 @@
+
 import Layout from "@/components/layout/Layout";
 import Head from "next/head";
 import Image from "next/image";
